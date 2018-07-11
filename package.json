@@ -1,0 +1,26 @@
+{
+  "name": "rovingui-wxapp",
+  "version": "1.0.0",
+  "description": "RovingUI-wxapp",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rovinglight/rovingui-wxapp.git"
+  },
+  "author": "rovinglight",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rovinglight/rovingui-wxapp/issues"
+  },
+  "homepage": "https://github.com/rovinglight/rovingui-wxapp#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1"
+  }
+}
