@@ -4,7 +4,6 @@
     bindtouchstart="handleTouchStart" 
     bindtouchend="handleTouchEnd"
     disabled="{{ disabled }}"
-    loading="{{loading}}"
     open-type="{{ openType }}"
     app-parameter="{{ appParameter }}"
     hover-stop-propagation="{{ hoverStopPropagation }}"
@@ -23,5 +22,6 @@
     <view class="btn-ripple" wx:for="{{ripple}}" wx:key="{{item.key}}" style="left:{{item.x}}px;top:{{item.y}}px">
         <view class="ripple-box"></view>
     </view>
+    <view class="{{loading ? 'loading' : ''}}"></view>
     <slot></slot>
 </button>
