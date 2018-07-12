@@ -1,5 +1,8 @@
+const nativeButtonBehavior = require('./native-button-behaviors')
+
 Component({
     externalClasses: ['ext-class'],
+    behaviors: [nativeButtonBehavior],
     properties: {
         disabled: {
             type: Boolean,
@@ -13,7 +16,7 @@ Component({
             type: String,
             value: 'default'
         },
-        raised : {
+        flat : {
             type: Boolean,
             value: false
         }

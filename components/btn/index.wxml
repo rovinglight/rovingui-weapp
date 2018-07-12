@@ -1,8 +1,25 @@
 <button 
-    class="ext-class btn-container {{disabled ? 'disabled' : ''}} {{(size === 'mini') ? 'mini' : ''}} {{type}} {{raised ? '' : 'flat'}}" 
+    class="ext-class btn-container {{disabled ? 'disabled' : ''}} {{(size === 'mini') ? 'mini' : ''}} {{type}} {{flat ? 'flat' : ''}}" 
     bindtap='handleTap' 
     bindtouchstart="handleTouchStart" 
-    bindtouchend="handleTouchEnd">
+    bindtouchend="handleTouchEnd"
+    disabled="{{ disabled }}"
+    loading="{{loading}}"
+    open-type="{{ openType }}"
+    app-parameter="{{ appParameter }}"
+    hover-stop-propagation="{{ hoverStopPropagation }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    lang="{{ lang }}"
+    session-from="{{ sessionFrom }}"
+    send-message-title="{{ sendMessageTitle }}"
+    send-message-path="{{ sendMessagePath }}"
+    send-message-img="{{ sendMessageImg }}"
+    show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binderror="binderror">
     <view class="btn-ripple" wx:for="{{ripple}}" wx:key="{{item.key}}" style="left:{{item.x}}px;top:{{item.y}}px">
         <view class="ripple-box"></view>
     </view>
