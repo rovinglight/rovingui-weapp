@@ -2,12 +2,13 @@ const gulp = require('gulp')
 const del = require('del')
 const sass = require('gulp-sass')
 const replace = require('gulp-replace')
+const rename = require('gulp-rename')
 
 const path = {
     src: {
         scss: 'components/**/*.scss',
         js: 'components/**/*.js',
-        wxml: 'compponents/**/*.wxml',
+        wxml: 'components/**/*.wxml',
         json: 'components/**/*.json'
     },
     components_src: [
@@ -19,6 +20,9 @@ const path = {
 gulp.task('sass_compiler', ['component_cleaner'], () => {
     gulp.src(path.src.scss)
         .pipe(sass().on('error', sass.logError))
+        .pipe(rename({
+			'extname': '.wxss'
+		}))
         .pipe(replace('.scss', '.wxss'))
         .pipe(gulp.dest(path.components_example))
 })
