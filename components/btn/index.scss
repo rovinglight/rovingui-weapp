@@ -1,16 +1,27 @@
+$primary-color: rgb(16,108,200);
+$primary-sub-color: white;
+$warn-color: rgb(255,87,34);
+$warn-sub-color: white;
+$default-color: white;
+$default-sub-color: rgba(0, 0, 0, 0.87);
+$flat-hover-color: rgba(158,158,158,0.2);
+
+button::after{
+    border: none;
+}
 .btn-container {
     width: 100%;
     display: inline-block;
-    background-color: white;
-    color: black;
+    background-color: $default-color;
+    color: $default-sub-color;
     font-weight: bolder;
     font-size: 16px;
     letter-spacing: 1px;
     height: 40px;
-    line-height: 37px;
+    line-height: 39px;
     border-radius: 20px;
     padding: 0px 25px;
-    border: 2px solid black;
+    border: 2px solid $default-sub-color;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     position: relative;
     transition: all .5s;
@@ -37,7 +48,7 @@
     height: 0px;
     position: absolute;
     border-radius: 50%;
-    border: 0px solid black;
+    border: 0px solid $default-sub-color;
     animation: ripple ease-in-out .2s;
 }
 .disabled {
@@ -47,20 +58,20 @@
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }
 .primary {
-    background-color: rgb(16,108,200);
-    color: white;
-    border-color: white;
-}
-.primary .ripple-box {
-    border-color: white;
+    background-color: $primary-color;
+    color: $primary-sub-color;
+    border-color: $primary-sub-color;
+    .ripple-box {
+        border-color: $primary-sub-color;
+    }
 }
 .warn {
-    background-color: rgb(255,87,34);
-    color: white;
-    border-color: white;
-}
-.warn .ripple-box {
-    border-color: white;
+    background-color: $warn-color;
+    color: $warn-sub-color;
+    border-color: $warn-sub-color;
+    .ripple-box {
+        border-color: $warn-sub-color;
+    }
 }
 .flat {
     box-shadow: none;
@@ -68,7 +79,33 @@
     border: none;
     position: relative;
 }
-
+.flat.default {
+    color: $default-sub-color;
+    &:active {
+        background-color: $flat-hover-color;
+        box-shadow: none;
+    }
+}
+.flat.warn {
+    color: $warn-color;
+    &:active {
+        background-color: $flat-hover-color;
+        box-shadow: none;
+    }
+    .ripple-box {
+        border-color: $warn-color;    
+    }
+}
+.flat.primary {
+    color: $primary-color;
+    &:active {
+        background-color: $flat-hover-color;
+        box-shadow: none;
+    }
+    .ripple-box {
+        border-color: $primary-color;
+    }
+}
 @keyframes ripple {
     0% {
         top: -10px;
