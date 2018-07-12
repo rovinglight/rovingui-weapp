@@ -1,5 +1,5 @@
 <button 
-    class="btn-container" 
+    class="ext-class btn-container {{disabled ? 'disabled' : ''}} {{(size === 'mini') ? 'mini' : ''}} {{type}} {{raised ? '' : 'flat'}}" 
     bindtap='handleTap' 
     bindtouchstart="handleTouchStart" 
     bindtouchend="handleTouchEnd">

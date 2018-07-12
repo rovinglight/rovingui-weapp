@@ -1,4 +1,5 @@
 .btn-container {
+    width: 100%;
     display: inline-block;
     background-color: white;
     color: black;
@@ -6,13 +7,22 @@
     font-size: 16px;
     letter-spacing: 1px;
     height: 40px;
-    line-height: 40px;
+    line-height: 37px;
     border-radius: 20px;
-    padding: 0px 40px;
+    padding: 0px 25px;
     border: 2px solid black;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     position: relative;
     transition: all .5s;
+}
+.mini {
+    width: auto;
+    font-size: 12px;
+    height: 30px;
+    line-height: 27px;
+    border-radius: 15px;
+    font-weight: 300;
+    padding: 0 15px;
 }
 .btn-container:active {
     box-shadow: 0 4px 8px 3px rgba(0,0,0,.26);
@@ -30,17 +40,44 @@
     border: 0px solid black;
     animation: ripple ease-in-out .2s;
 }
+.disabled {
+    opacity: .5;
+}
+.disabled:active {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+.primary {
+    background-color: rgb(16,108,200);
+    color: white;
+    border-color: white;
+}
+.primary .ripple-box {
+    border-color: white;
+}
+.warn {
+    background-color: rgb(255,87,34);
+    color: white;
+    border-color: white;
+}
+.warn .ripple-box {
+    border-color: white;
+}
+.flat {
+    box-shadow: none;
+    background-color: transparent;
+}
+
 @keyframes ripple {
     0% {
         top: -10px;
         left: -10px;
-        border: 10px solid black;
+        border-width: 10px;
     }
     100% {
         top: -50px;
         left: -50px;
         width: 100px;
         height: 100px;
-        border: 0px solid black;
+        border-width: 0px;
     }
 }
