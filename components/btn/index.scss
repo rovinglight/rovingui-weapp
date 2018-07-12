@@ -63,6 +63,8 @@ button::after{
     height: 12px;
     border-radius: 50%;
     margin-right: 1em;
+    border-width: 0;
+    border: 2px solid $default-color; 
     border-left: 2px solid $default-sub-color;
     animation: spin linear 1s infinite;
     animation-delay: .25s;
@@ -76,7 +78,8 @@ button::after{
         border-color: $primary-sub-color;
     }
     .loading {
-        border-color: $primary-sub-color;
+        border: 2px solid $primary-color; 
+        border-left: 2px solid $primary-sub-color;
     }
 }
 .warn {
@@ -87,7 +90,8 @@ button::after{
         border-color: $warn-sub-color;
     }
     .loading {
-        border-color: $warn-sub-color;
+        border: 2px solid $warn-color; 
+        border-left: 2px solid $warn-sub-color;
     }
 }
 .flat {

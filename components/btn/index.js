@@ -27,8 +27,7 @@ Component({
     },
     methods: {
         handleTap: function (e) {
-            console.log(e)
-            if (!this.data.disabled) {
+            if (!this.data.disabled && !this.properties.loading) {
                 let x = e.detail.x - e.target.offsetLeft
                 let y = e.detail.y - e.target.offsetTop
                 let coordinate = {
@@ -37,8 +36,8 @@ Component({
                     key: e.timeStamp
                 }
                 this.generateRipple(coordinate)
+                this.triggerEvent('click')
             }
-            console.log(JSON.parse(JSON.stringify(this.data.ripple)))
         },
         handleTouchStart: function (e) {
             this.setData({
@@ -62,7 +61,6 @@ Component({
                 this.setData({
                     ripple: rippleList
                 })
-                console.log(JSON.parse(JSON.stringify(this.data.ripple)))
             }, 190)
         }
     }
