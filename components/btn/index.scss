@@ -34,6 +34,10 @@ button::after{
     border-radius: 15px;
     font-weight: 300;
     padding: 0 15px;
+    .loading {
+        width: 8px;
+        height: 8px;
+    }
 }
 .btn-container:active {
     box-shadow: 0 4px 8px 3px rgba(0,0,0,.26);
