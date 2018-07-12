@@ -65,6 +65,8 @@
 .flat {
     box-shadow: none;
     background-color: transparent;
+    border: none;
+    position: relative;
 }
 
 @keyframes ripple {
