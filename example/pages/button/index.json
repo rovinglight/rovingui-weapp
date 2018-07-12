@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "RovingUI组件演示",
+  "navigationBarTitleText": "rov-button",
   "usingComponents": {
     "rov-button": "../../components/btn/index"
   }

@@ -1,1 +1,1 @@
-<zan-button>赞按钮</zan-button>
+<rov-button bindclick="navigateTo" data-url="../button/index">ROV按钮</rov-button>
