@@ -1,7 +1,7 @@
 
 Page({
   data: {
-    
+    loading: false
   },
 
   onLoad: function () {
@@ -11,8 +11,9 @@ Page({
   onShow: function() {
   },
   handleTap: function (e) {
+    let loading = this.data.loading
     this.setData({
-      loading: true
+      loading: !loading
     })
   }
 })
