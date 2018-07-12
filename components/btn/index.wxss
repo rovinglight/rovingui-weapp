@@ -1,0 +1,46 @@
+.btn-container {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    letter-spacing: 1px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 40px;
+    border: 2px solid black;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    position: relative;
+    transition: all .5s;
+}
+.btn-container:active {
+    box-shadow: 0 4px 8px 3px rgba(0,0,0,.26);
+}
+.btn-ripple {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ripple-box {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-radius: 50%;
+    border: 0px solid black;
+    animation: ripple ease-in-out .2s;
+}
+@keyframes ripple {
+    0% {
+        top: -10px;
+        left: -10px;
+        border: 10px solid black;
+    }
+    100% {
+        top: -50px;
+        left: -50px;
+        width: 100px;
+        height: 100px;
+        border: 0px solid black;
+    }
+}

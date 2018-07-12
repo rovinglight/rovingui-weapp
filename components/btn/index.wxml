@@ -1,0 +1,10 @@
+<button 
+    class="btn-container" 
+    bindtap='handleTap' 
+    bindtouchstart="handleTouchStart" 
+    bindtouchend="handleTouchEnd">
+    <view class="btn-ripple" wx:for="{{ripple}}" wx:key="{{item.key}}" style="left:{{item.x}}px;top:{{item.y}}px">
+        <view class="ripple-box"></view>
+    </view>
+    <slot></slot>
+</button>
