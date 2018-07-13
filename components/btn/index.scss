@@ -24,6 +24,7 @@ button::after{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     position: relative;
     transition: all .5s;
+    text-overflow: ellipsis;
 }
 .mini {
     width: auto;

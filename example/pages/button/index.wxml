@@ -12,13 +12,28 @@
 </view>
 <view class="section-container">
     <view>Mini 按钮</view>
-    <rv-button loading="{{loading}}" size="mini" flat>默认按钮</rv-button>
-    <rv-button loading="{{loading}}" size="mini" type="primary" flat>Primary</rv-button>
-    <rv-button loading="{{loading}}" size="mini" type="warn" flat>Warn</rv-button>
-    <view></view>
-    <rv-button loading="{{loading}}" size="mini">默认按钮</rv-button>
-    <rv-button loading="{{loading}}" size="mini" type="primary">Primary</rv-button>
-    <rv-button loading="{{loading}}" size="mini" type="warn">Warn</rv-button>
+    <view class="rv-row rv-row-space-between">
+        <view class="rv-col-7">
+            <rv-button loading="{{loading}}" size="mini" flat>默认按钮</rv-button>
+        </view>
+        <view class="rv-col-7">
+            <rv-button loading="{{loading}}" size="mini" type="primary" flat>Primary</rv-button>
+        </view>
+        <view class="rv-col-7">
+            <rv-button loading="{{loading}}" size="mini" type="warn" flat>Warn</rv-button>
+        </view>        
+    </view>
+    <view class="rv-row rv-row-space-between">
+        <view class="rv-col-7">
+            <rv-button loading="{{loading}}" size="mini">默认按钮</rv-button>
+        </view>
+        <view class="rv-col-7">
+            <rv-button loading="{{loading}}" size="mini" type="primary">Primary</rv-button>        
+        </view>
+        <view class="rv-col-7">
+           <rv-button loading="{{loading}}" size="mini" type="warn">Warn</rv-button> 
+        </view>
+    </view>
 </view>
 <view class="section-container">
     Loading

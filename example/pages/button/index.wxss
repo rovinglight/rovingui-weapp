@@ -1,3 +1,7 @@
 .section-container {
     padding: 0 10px;
+    position: relative;
+}
+.section-container button {
+    margin-top: 10px;
 }
