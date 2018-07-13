@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "rov-button",
+  "navigationBarTitleText": "rv-button",
   "usingComponents": {
     "rv-button": "../../components/btn/index"
   }
