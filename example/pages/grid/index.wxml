@@ -43,35 +43,35 @@
 </view>
 <view class="section-container">
     <view class="title">Flex布局</view>
-    <view class="sub-text">sub-element align left</view>
+    <view class="sub-text">子元素左对齐：rv-row-start</view>
     <view class="rv-row rv-row-start">
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
     </view>
-    <view class="sub-text">sub-element align center</view>
+    <view class="sub-text">子元素居中：rv-row-center</view>
     <view class="rv-row rv-row-center">
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
     </view>
-    <view class="sub-text">sub-element align right</view>
+    <view class="sub-text">子元素右对齐：rv-row-end</view>
     <view class="rv-row rv-row-end">
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
     </view>
-    <view class="sub-text">sub-element monospaced arrangement</view>
+    <view class="sub-text">子元素间填充：rv-row-space-between</view>
     <view class="rv-row rv-row-space-between">
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
     </view>
-    <view class="sub-text">sub-element align full</view>
+    <view class="sub-text">子元素四周填充：rv-row-space-around</view>
     <view class="rv-row rv-row-space-around">
         <view class="rv-col-4 demo-col">rv-col-4</view>
         <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>

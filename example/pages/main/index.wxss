@@ -1,0 +1,9 @@
+.logo {
+    width: 175rpx;
+    height: 175rpx;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px double black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+    margin-top: 10px;
+}

@@ -7,7 +7,7 @@
 }
 .demo-col {
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 400;
     text-align: center;
     height: 30px;
     line-height: 30px;

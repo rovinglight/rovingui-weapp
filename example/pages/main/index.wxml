@@ -1,4 +1,16 @@
-
+<view class="section-container">
+    <view class="rv-row rv-row-center">
+        <view class="rv-col">
+            <image class="logo" src="../../asset/logo/rovingui-LOGO.png" />
+        </view>
+    </view>
+    <view class="divider" />
+    <view class="rv-row  rv-row-center">
+        <view class="rv-col">
+            Roving-UI
+        </view>
+    </view>
+</view>
 <view class="section-container">
     <rv-button bindclick="navigateTo" data-url="../button/index">rv-button</rv-button>
     <view class="divider" />
