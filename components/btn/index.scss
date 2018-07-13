@@ -11,7 +11,6 @@ button::after{
 }
 .btn-container {
     width: 100%;
-    display: inline-block;
     background-color: $default-color;
     color: $default-sub-color;
     font-weight: bolder;
@@ -37,6 +36,9 @@ button::after{
     .loading {
         width: 8px;
         height: 8px;
+    }
+    .ripple-box {
+        animation: ripple-mini ease .2s;
     }
 }
 .btn-container:active {
@@ -141,6 +143,20 @@ button::after{
         left: -50px;
         width: 100px;
         height: 100px;
+        border-width: 0px;
+    }
+}
+@keyframes ripple-mini {
+    0% {
+        top: -10px;
+        left: -10px;
+        border-width: 10px;
+    }
+    100% {
+        top: -25px;
+        left: -25px;
+        width: 50px;
+        height: 50px;
         border-width: 0px;
     }
 }
