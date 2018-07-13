@@ -28,8 +28,10 @@ Component({
     methods: {
         handleTap: function (e) {
             if (!this.data.disabled && !this.properties.loading) {
-                let x = e.detail.x - e.target.offsetLeft
-                let y = e.detail.y - e.target.offsetTop
+                // let x = e.detail.x - e.target.offsetLeft
+                // let y = e.detail.y - e.target.offsetTop
+                let x = 50
+                let y = 50
                 let coordinate = {
                     x: x,
                     y: y,
@@ -40,6 +42,7 @@ Component({
             }
         },
         handleTouchStart: function (e) {
+            console.log(e)
             this.setData({
                 isHolding: true
             })
@@ -55,6 +58,7 @@ Component({
             this.setData({
                 ripple: rippleList
             })
+            console.log(this.data.ripple)
             setTimeout(() => {
                 rippleList = this.data.ripple
                 rippleList = rippleList.filter(((ripple) => ripple.key !== coordinate.key))
