@@ -1,5 +1,6 @@
 @import "../../components/grid/index.wxss";
 
+
 .rv-row {
     padding: 10px 0;
     background-color: #f5f5f5;
@@ -20,12 +21,10 @@
 .dark-bg {
     background-color: #00a0e9;
 }
-.divider {
-    padding: 5px;
-}
 .title {
     font-size: 18px;
     color: #314659;
+    margin-bottom: 10px;
 }
 .sub-text {
     font-size: 12px;

@@ -1,6 +1,6 @@
 # RovingUI组件库  
 
-![logo](./asset/logo/rovingui-LOGO.png)
+![logo](./example/asset/logo/rovingui-LOGO.png)
 ## 开发  
 
 ```

@@ -1,1 +1,12 @@
-@import "components/grid/index.wxss"
+@import "components/grid/index.wxss";
+
+.section-container {
+    padding: 0 10px;
+    padding-top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.87);
+}
+.divider {
+    padding: 5px;
+}

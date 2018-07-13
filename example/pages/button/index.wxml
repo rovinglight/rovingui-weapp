@@ -4,12 +4,14 @@
     <rv-button loading="{{loading}}" type="primary">Primary</rv-button>
     <rv-button loading="{{loading}}" type="warn">Warn</rv-button>
 </view>
+
 <view class="section-container">
     扁平按钮
     <rv-button loading="{{loading}}" flat>默认按钮</rv-button>
     <rv-button loading="{{loading}}" type="primary" flat>Primary</rv-button>
     <rv-button loading="{{loading}}" type="warn" flat>Warn</rv-button>
 </view>
+
 <view class="section-container">
     <view>Mini 按钮</view>
     <view class="rv-row rv-row-space-between">
@@ -35,6 +37,7 @@
         </view>
     </view>
 </view>
+
 <view class="section-container">
     Loading
     <rv-button type="warn" loading="{{loading}}" bindtap="handleTap">点击来进入加载状态</rv-button>

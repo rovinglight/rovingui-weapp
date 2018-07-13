@@ -1,2 +1,6 @@
-<rv-button bindclick="navigateTo" data-url="../button/index">rv-button</rv-button>
-<rv-button bindclick="navigateTo" data-url="../grid/index">rv-grid</rv-button>
+
+<view class="section-container">
+    <rv-button bindclick="navigateTo" data-url="../button/index">rv-button</rv-button>
+    <view class="divider" />
+    <rv-button bindclick="navigateTo" data-url="../grid/index">rv-grid</rv-button>
+</view>

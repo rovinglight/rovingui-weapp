@@ -1,102 +1,118 @@
-<view class="title">基础栅格</view>
-<view class="rv-row">
-    <view class="rv-col-12 demo-col">rv-col-12</view>
-    <view class="rv-col-12 demo-col dark-bg">rv-col-12</view>
+<view class="section-container">
+    <view class="title">基础栅格</view>
+    <view class="rv-row">
+        <view class="rv-col-12 demo-col">rv-col-12</view>
+        <view class="rv-col-12 demo-col dark-bg">rv-col-12</view>
+    </view>
+    <view class="divider" />
+    <view class="rv-row">
+        <view class="rv-col-8 demo-col">rv-col-8</view>
+        <view class="rv-col-8 demo-col dark-bg">rv-col-8</view>
+        <view class="rv-col-8 demo-col">rv-col-8</view>
+    </view>
+    <view class="divider" />
+    <view class="rv-row">
+        <view class="rv-col-6 demo-col">rv-col-6</view>
+        <view class="rv-col-6 demo-col dark-bg">rv-col-6</view>
+        <view class="rv-col-6 demo-col">rv-col-6</view>
+        <view class="rv-col-6 demo-col dark-bg">rv-col-6</view>
+    </view>
 </view>
-<view class="divider" />
-<view class="rv-row">
-    <view class="rv-col-8 demo-col">rv-col-8</view>
-    <view class="rv-col-8 demo-col dark-bg">rv-col-8</view>
-    <view class="rv-col-8 demo-col">rv-col-8</view>
+<view class="section-container">
+    <view class="title">左右偏移</view>
+    <view class="rv-row">
+        <view class="rv-col-8 demo-col">rv-col-8</view>
+        <view class="rv-col-8 rv-offset-8 demo-col dark">rv-offset-8</view>
+    </view>
+    <view class="divider" />
+    <view class="rv-row">
+        <view class="rv-col-6 demo-col rv-offset-6">rv-offset-6</view>
+        <view class="rv-col-6 demo-col dark-bg rv-offset-6">rv-offset-6</view>
+    </view>
+    <view class="divider" />
+    <view class="rv-row">
+        <view class="rv-col-12 rv-offset-6 demo-col">rv-offset-6</view>
+    </view>
 </view>
-<view class="divider" />
-<view class="rv-row">
-    <view class="rv-col-6 demo-col">rv-col-6</view>
-    <view class="rv-col-6 demo-col dark-bg">rv-col-6</view>
-    <view class="rv-col-6 demo-col">rv-col-6</view>
-    <view class="rv-col-6 demo-col dark-bg">rv-col-6</view>
+<view class="section-container">
+    <view class="title">栅格排序</view>
+    <view class="rv-row">
+        <view class="rv-col-18 rv-push-6 demo-col">rv-push-6</view>
+        <view class="rv-col-6 rv-pull-18 demo-col dark-bg">rv-pull-18</view>
+    </view>
 </view>
-<view class="title">左右偏移</view>
-<view class="rv-row">
-    <view class="rv-col-8 demo-col">rv-col-8</view>
-    <view class="rv-col-8 rv-offset-8 demo-col dark">rv-offset-8</view>
+<view class="section-container">
+    <view class="title">Flex布局</view>
+    <view class="sub-text">sub-element align left</view>
+    <view class="rv-row rv-row-start">
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">sub-element align center</view>
+    <view class="rv-row rv-row-center">
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">sub-element align right</view>
+    <view class="rv-row rv-row-end">
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">sub-element monospaced arrangement</view>
+    <view class="rv-row rv-row-space-between">
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">sub-element align full</view>
+    <view class="rv-row rv-row-space-around">
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
 </view>
-<view class="divider" />
-<view class="rv-row">
-    <view class="rv-col-6 demo-col rv-offset-6">rv-offset-6</view>
-    <view class="rv-col-6 demo-col dark-bg rv-offset-6">rv-offset-6</view>
+<view class="section-container">
+    <view class="title">Flex 对齐</view>
+    <view class="sub-text">Align Top</view>
+    <view class="rv-row rv-row-center rv-row-top">
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">Align Center</view>
+    <view class="rv-row rv-row-space-between rv-row-middle">
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
+    <view class="sub-text">Align Bottom</view>
+    <view class="rv-row rv-row-space-around rv-row-bottom">
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+        <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
+        <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
+    </view>
 </view>
-<view class="divider" />
-<view class="rv-row">
-    <view class="rv-col-12 rv-offset-6 demo-col">rv-offset-6</view>
+<view class="section-container">
+    <view class="title">Flex 排序</view>
+    <view class="rv-row">
+        <view class="rv-col-6 demo-col rv-order-4">rv-order-4</view>
+        <view class="rv-col-6 demo-col dark-bg rv-order-3">rv-order-3</view>
+        <view class="rv-col-6 demo-col rv-order-2">rv-order-2</view>
+        <view class="rv-col-6 demo-col dark-bg rv-order-1">rv-order-1</view>
+    </view>
 </view>
-<view class="title">栅格排序</view>
-<view class="rv-row">
-    <view class="rv-col-18 rv-push-6 demo-col">rv-push-6</view>
-    <view class="rv-col-6 rv-pull-18 demo-col dark-bg">rv-pull-18</view>
-</view>
-<view class="title">Flex布局</view>
-<view class="sub-text">sub-element align left</view>
-<view class="rv-row rv-row-start">
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">sub-element align center</view>
-<view class="rv-row rv-row-center">
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">sub-element align right</view>
-<view class="rv-row rv-row-end">
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">sub-element monospaced arrangement</view>
-<view class="rv-row rv-row-space-between">
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">sub-element align full</view>
-<view class="rv-row rv-row-space-around">
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="title">Flex 对齐</view>
-<view class="sub-text">Align Top</view>
-<view class="rv-row rv-row-center rv-row-top">
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">Align Center</view>
-<view class="rv-row rv-row-space-between rv-row-middle">
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="sub-text">Align Bottom</view>
-<view class="rv-row rv-row-space-around rv-row-bottom">
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-    <view class="rv-col-4 demo-col higher-col">rv-col-4</view>
-    <view class="rv-col-4 demo-col dark-bg">rv-col-4</view>
-</view>
-<view class="title">Flex 排序</view>
-<view class="rv-row">
-    <view class="rv-col-6 demo-col rv-order-4">rv-order-4</view>
-    <view class="rv-col-6 demo-col dark-bg rv-order-3">rv-order-3</view>
-    <view class="rv-col-6 demo-col rv-order-2">rv-order-2</view>
-    <view class="rv-col-6 demo-col dark-bg rv-order-1">rv-order-1</view>
-</view>
+
+
+
+

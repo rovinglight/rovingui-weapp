@@ -1,8 +1,8 @@
 {
     "pages": [
         "pages/main/index",
-        "pages/grid/index",
-        "pages/button/index"
+        "pages/button/index",
+        "pages/grid/index"
     ],
     "window":{
         "backgroundTextStyle":"light",
