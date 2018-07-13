@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "rov-button",
   "usingComponents": {
-    "rov-button": "../../components/btn/index"
+    "rv-button": "../../components/btn/index"
   }
 }

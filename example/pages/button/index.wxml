@@ -1,26 +1,26 @@
 <view class="section-container">
     默认按钮
-    <rov-button loading="{{loading}}">默认按钮</rov-button>
-    <rov-button loading="{{loading}}" type="primary">Primary</rov-button>
-    <rov-button loading="{{loading}}" type="warn">Warn</rov-button>
+    <rv-button loading="{{loading}}">默认按钮</rv-button>
+    <rv-button loading="{{loading}}" type="primary">Primary</rv-button>
+    <rv-button loading="{{loading}}" type="warn">Warn</rv-button>
 </view>
 <view class="section-container">
     扁平按钮
-    <rov-button loading="{{loading}}" flat>默认按钮</rov-button>
-    <rov-button loading="{{loading}}" type="primary" flat>Primary</rov-button>
-    <rov-button loading="{{loading}}" type="warn" flat>Warn</rov-button>
+    <rv-button loading="{{loading}}" flat>默认按钮</rv-button>
+    <rv-button loading="{{loading}}" type="primary" flat>Primary</rv-button>
+    <rv-button loading="{{loading}}" type="warn" flat>Warn</rv-button>
 </view>
 <view class="section-container">
     <view>Mini 按钮</view>
-    <rov-button loading="{{loading}}" size="mini" flat>默认按钮</rov-button>
-    <rov-button loading="{{loading}}" size="mini" type="primary" flat>Primary</rov-button>
-    <rov-button loading="{{loading}}" size="mini" type="warn" flat>Warn</rov-button>
+    <rv-button loading="{{loading}}" size="mini" flat>默认按钮</rv-button>
+    <rv-button loading="{{loading}}" size="mini" type="primary" flat>Primary</rv-button>
+    <rv-button loading="{{loading}}" size="mini" type="warn" flat>Warn</rv-button>
     <view></view>
-    <rov-button loading="{{loading}}" size="mini">默认按钮</rov-button>
-    <rov-button loading="{{loading}}" size="mini" type="primary">Primary</rov-button>
-    <rov-button loading="{{loading}}" size="mini" type="warn">Warn</rov-button>
+    <rv-button loading="{{loading}}" size="mini">默认按钮</rv-button>
+    <rv-button loading="{{loading}}" size="mini" type="primary">Primary</rv-button>
+    <rv-button loading="{{loading}}" size="mini" type="warn">Warn</rv-button>
 </view>
 <view class="section-container">
     Loading
-    <rov-button type="warn" loading="{{loading}}" bindtap="handleTap">点击来进入加载状态</rov-button>
+    <rv-button type="warn" loading="{{loading}}" bindtap="handleTap">点击来进入加载状态</rv-button>
 </view>

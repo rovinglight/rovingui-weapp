@@ -1,1 +1,1 @@
-<rov-button bindclick="navigateTo" data-url="../button/index">ROV按钮</rov-button>
+<rv-button bindclick="navigateTo" data-url="../button/index">ROV按钮</rv-button>
