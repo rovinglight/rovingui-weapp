@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/grid/index",
         "pages/main/index",
+        "pages/grid/index",
         "pages/button/index"
     ],
     "window":{

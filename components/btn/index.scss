@@ -71,8 +71,7 @@ button::after{
     border: 2px solid $default-color; 
     border-left: 2px solid $default-sub-color;
     animation: spin linear 1s infinite;
-    animation-delay: .25s;
-    transition: all .25s;
+    transition: margin .25s;
 }
 .primary {
     background-color: $primary-color;
