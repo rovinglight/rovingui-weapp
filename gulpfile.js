@@ -6,13 +6,13 @@ const rename = require('gulp-rename')
 
 const path = {
     src: {
-        scss: 'components/**/*.scss',
-        js: 'components/**/*.js',
-        wxml: 'components/**/*.wxml',
-        json: 'components/**/*.json'
+        scss: 'src/**/*.scss',
+        js: 'src/**/*.js',
+        wxml: 'src/**/*.wxml',
+        json: 'src/**/*.json'
     },
     components_src: [
-        'components/**/*'
+        'src/**/*'
     ],
     components_example: 'example/components'
 }
