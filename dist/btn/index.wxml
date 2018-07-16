@@ -1,0 +1,27 @@
+<button 
+    class="ext-class btn-container {{disabled ? 'disabled' : ''}} {{(size === 'mini') ? 'mini' : ''}} {{type}} {{flat ? 'flat' : ''}}" 
+    bindtap='handleTap' 
+    bindtouchstart="handleTouchStart" 
+    bindtouchend="handleTouchEnd"
+    disabled="{{ disabled }}"
+    open-type="{{ openType }}"
+    app-parameter="{{ appParameter }}"
+    hover-stop-propagation="{{ hoverStopPropagation }}"
+    hover-start-time="{{ hoverStartTime }}"
+    hover-stay-time="{{ hoverStayTime }}"
+    lang="{{ lang }}"
+    session-from="{{ sessionFrom }}"
+    send-message-title="{{ sendMessageTitle }}"
+    send-message-path="{{ sendMessagePath }}"
+    send-message-img="{{ sendMessageImg }}"
+    show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binderror="binderror">
+    <view class="btn-ripple" wx:for="{{ripple}}" wx:key="{{item.key}}" style="left:{{item.x}}%;top:{{item.y}}%">
+        <view class="ripple-box"></view>
+    </view>
+    <view class="{{loading ? 'loading' : ''}}"></view>
+    <slot></slot>
+</button>
