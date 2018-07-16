@@ -9,7 +9,9 @@
   "homepage": "https://github.com/rovinglight/rovingui-wxapp",
   "ignore": [
     "**/.*",
+    "**/*.md",
     "gulpfile.js",
+    "package.json",
     "node_modules",
     "bower_components",
     "test",
