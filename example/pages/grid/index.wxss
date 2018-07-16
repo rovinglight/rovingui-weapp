@@ -13,6 +13,10 @@
     line-height: 30px;
     background-color: rgba(0,160,233,.7);
     color: white;
+    transition: all .5s;
+}
+.demo-col:active {
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.26);
 }
 .higher-col {
     height: 40px;
