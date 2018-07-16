@@ -1,0 +1,19 @@
+{
+  "name": "rovingui-wxapp",
+  "description": "UI Library for WX mini program",
+  "main": "index.js",
+  "authors": [
+    "rovinglight"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rovinglight/rovingui-wxapp",
+  "ignore": [
+    "**/.*",
+    "gulpfile.js",
+    "node_modules",
+    "bower_components",
+    "test",
+    "src",
+    "example"
+  ]
+}
