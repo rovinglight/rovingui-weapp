@@ -3,6 +3,7 @@
 ![logo](./example/asset/logo/rovingui-LOGO.png)
 ## 概述
 [RovingUI](https://github.com/rovinglight/rovingui-wxapp)组件库是由个人在微信小程序开发中所构建的独立组件整合而成的。在组件设计上会偏重动态效果以及阴影的使用。  
+
 现包含按钮(btn)以及栅格(grid)组件，更多组件在来的路上。
 
 ## 开发  
@@ -28,9 +29,10 @@ bower install https://github.com/rovinglight/rovingui-wxapp.git
 ```html
 <rv-button>我是rv-button组件</rv-button>
 ```
-## 组件使用
-- [rv-button](./src/btn/README.md)
-- [rv-grid](./src/grid/README.md)
+## 组件使用演示
+组件演示文档中的每一节代码示例都与Demo小程序中的每一节对应。
+- 按钮 [rv-button](./src/btn/README.md)
+- 栅格 [rv-grid](./src/grid/README.md)
 
 ## 贡献
 欢迎issue以及PR
