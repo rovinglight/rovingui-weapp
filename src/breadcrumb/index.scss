@@ -1,0 +1,29 @@
+.breadcrumb-container {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px; 
+    height: 25px;
+    line-height: 15px;
+    font-size: 12px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    padding-right: 3px;
+}
+.breadcrumb-item {
+    display: inline-block;
+    transform: skew(-30deg);
+    padding: 5px 15px;
+    transition: all .5s;
+}
+.breadcrumb-item:active {
+    background-color: #ddd;
+}
+.breadcrumb-place-holder {
+    padding: 5px 6px;
+}
+.breadcrumb-content {
+    transform: skew(30deg);
+}
+.bg-dark {
+    background-color: #535353;
+    color: white;
+}

@@ -1,0 +1,13 @@
+<view class="breadcrumb-container">
+    <view 
+        wx:for="{{itemList}}" 
+        wx:key="{{index}}" 
+        data-key="{{item.key || item}}"
+        class="breadcrumb-item {{(index % 2 === 0) ? '' : 'bg-dark'}}" 
+        bindtap="handleTap">
+        <view class="breadcrumb-content">{{item.display || item}}</view>
+    </view>
+    <view class="breadcrumb-item breadcrumb-place-holder">
+        <view class="breadcrumb-content">《</view>
+    </view>
+</view>
