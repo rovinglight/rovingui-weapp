@@ -65,3 +65,26 @@
     </rv-button>
 </view>
 ```
+### 属性及事件
+
+| 属性名                | 类型     | 默认         | 描述                                       |
+| -------------------- | ------- | ------------ | ------------------------------------------ |
+| loading              | Boolean | false        | 按钮是否在加载状态                         |
+| openType             | String  | -            | 同原生button组件open-type属性              |
+| appParameter         | String  | -            | 同原生button组件app-parameter属性          |
+| hoverStopPropagation | Boolean | false        | 同原生button组件hover-stop-propagation属性 |
+| hoverStartTime       | Number  | 20           | 同原生button组件hover-start-time属性       |
+| hoverStayTime        | Number  | 70           | 同原生button组件hover-stay-time属性        |
+| lang                 | String  | en           | 同原生button组件lang属性                   |
+| sessionFrom          | String  | -            | 同原生button组件session-form属性           |
+| sendMessageTitle     | String  | 当前标题      | 同原生button组件send-message-title属性     |
+| sendMessagePath      | String  | 当前分享路径   | 同原生button组件send-message-path属性      |
+| sendMessageImg       | String  | 截图          | 同原生button组件send-message-img属性       |
+| showMessageCard      | Boolean | false        | 同原生button组件send-message-card属性      |
+| bindrvclick          | Handler |              | 按钮在被点击时触发                          |
+| bindgetuserinfo      | Handler |              | 同原生button组件bindgetuserinfo            |
+| bindcontact          | Handler |              | 同原生button组件bindcontact                |
+| bindgetphonenumber   | Handler |              | 同原生button组件bindgetphonenumber         |
+| binderror            | Handler |              | 同原生button组件binderror                  |
+
+[原生button组件文档](https://developers.weixin.qq.com/miniprogram/dev/component/button.html)

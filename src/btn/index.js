@@ -38,7 +38,7 @@ Component({
                     key: e.timeStamp
                 }
                 this.generateRipple(coordinate)
-                this.triggerEvent('click')
+                this.triggerEvent('rvclick', e)
             }
         },
         handleTouchStart: function (e) {
