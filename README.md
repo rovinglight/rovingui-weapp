@@ -33,6 +33,7 @@ bower install https://github.com/rovinglight/rovingui-wxapp.git
 组件演示文档中的每一节代码示例都与Demo小程序中的每一节对应。
 - 按钮 [rv-button](./src/btn/README.md)
 - 栅格 [rv-grid](./src/grid/README.md)
+- 面包屑 [rv-breadcrumb](./src/breadcrumb/README.md)
 
 ## 贡献
 欢迎issue以及PR

@@ -8,3 +8,8 @@
     <view class="divider" />
     <rv-breadcrumb itemList="{{oddList}}" bindrvclick="handleClick" />
 </view>
+<view class="section-container">
+    传入对象数组
+    <view class="divider" />
+    <rv-breadcrumb itemList="{{objList}}" bindrvclick="handleClick" />
+</view>
