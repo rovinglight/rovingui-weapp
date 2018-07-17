@@ -1,10 +1,11 @@
 # 栅格 rv-grid
 ## 安装
-栅格是以css的class的形式来进行应用的，故不必通过页面json文件来进行引用。推荐在app.wxss中进行引用。
+栅格是以样式类的形式来进行应用的，故不必通过页面json文件来进行设置。推荐在app.wxss中进行引用。
 ```css
 @import "path/to/bower_components/rovingui-wxapp/dist/grid/index.wxss"
 ```
 ## 使用
+rv-grid为24栅格系统，借鉴[ant design](https://ant.design/components/grid-cn/)的栅格系统，仅保留Flex布局。
 ### 基础栅格
 ```html
 <view>

@@ -69,6 +69,9 @@
 
 | 属性名                | 类型     | 默认         | 描述                                       |
 | -------------------- | ------- | ------------ | ------------------------------------------ |
+| type                 | String  | default      | 设置按钮样式，可选primary、warn、default     |
+| flat                 | Boolean | false        | 设置按钮是否扁平
+| size                 | String  | default      | 设置按钮大小，可选default、mini
 | loading              | Boolean | false        | 按钮是否在加载状态                         |
 | openType             | String  | -            | 同原生button组件open-type属性              |
 | appParameter         | String  | -            | 同原生button组件app-parameter属性          |
