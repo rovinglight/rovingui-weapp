@@ -1,0 +1,10 @@
+<view class="section-container">
+    偶数级路径
+    <view class="divider" />
+    <rv-breadcrumb itemList="{{evenList}}" bindrvclick="handleClick" />
+</view>
+<view class="section-container">
+    奇数级路径
+    <view class="divider" />
+    <rv-breadcrumb itemList="{{oddList}}" bindrvclick="handleClick" />
+</view>

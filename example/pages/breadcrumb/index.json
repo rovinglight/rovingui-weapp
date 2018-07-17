@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "rv-breadcrumb",
+  "usingComponents": {
+    "rv-breadcrumb": "../../components/breadcrumb/index"
+  }
+}
