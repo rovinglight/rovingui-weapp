@@ -1,0 +1,7 @@
+<view class="section-container">
+    Toast
+    <rv-button bindrvclick="handleClick">show toast</rv-button>
+    <view class="divider" />
+    <rv-button bindrvclick="clearToast">clear toast</rv-button>
+</view>
+<rv-toast toastList="{{_rv_toast_list}}" bindtoastclose="handleToastClose" />

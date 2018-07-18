@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "rv-toast": "../../components/toast/index",
+    "rv-button": "../../components/btn/index"
+  }
+}

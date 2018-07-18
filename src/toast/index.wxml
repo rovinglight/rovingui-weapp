@@ -1,0 +1,13 @@
+<view class="toast-list-container">
+    <view 
+        wx:for="{{toastList}}" 
+        wx:key="{{item.key}}" 
+        class="toast-container" >
+        <view class="toast-close" data-key="{{item.key}}" bindtap="handleClose">
+            <text>X</text>
+        </view>
+        <view class="toast-content">
+            {{item.message}}
+        </view>
+    </view>
+</view>
