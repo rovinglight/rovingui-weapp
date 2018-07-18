@@ -14,24 +14,27 @@ class rvToast {
             [TOAST_LIST]: toastList
         })
         let callBack = this.cbList.find(item => item.key === key)
-        callBack.cb && callBack.cb()
+        callBack.onClose && callBack.onClose()
     }
     show (message, config) {
         let toastList = this.pageCtx.data[TOAST_LIST] || []
         let date = new Date()
         let key = date.valueOf()
-        let cb = config.cb
-        let duration = config.duration
+        let onClose = config.onClose
+        let onClick = config.onClick
+        let duration = config.duration === null ? null : config.duration || 4500
+        console.log(duration)
         toastList.push({
             key,
             message
         })
         this.pageCtx.setData({
-            _rv_toast_list: toastList
+            [TOAST_LIST]: toastList
         })
         this.cbList.push({
             key,
-            cb
+            onClose,
+            onClick
         })
         if (duration) {
             setTimeout(() => {

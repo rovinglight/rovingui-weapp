@@ -6,7 +6,7 @@
         <view class="toast-close" data-key="{{item.key}}" bindtap="handleClose">
             <text>X</text>
         </view>
-        <view class="toast-content">
+        <view class="toast-content" data-key="{{item.key}}" bindtap="handleTapMsg">
             {{item.message}}
         </view>
     </view>
