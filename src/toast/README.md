@@ -9,7 +9,7 @@ rv-toast为页面内组件，故所有toast仅在当前Page中显示，切换页
   }
 }
 ```
-2. 在页面的js文件中引入rvToast
+2. 在页面的js文件中引入rvToast，并在onLoad中进行初始化
 ```js
 import rvToastFactory from "path/to/bower_components/rovingui-wxapp/dist/toast/toast"
 let rvToast = {}
