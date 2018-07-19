@@ -112,10 +112,7 @@ class rvToast {
         })
         if (duration) {
             setTimeout(() => {
-                console.log("before close", JSON.parse(JSON.stringify(this.pageCtx.data[TOAST_LIST])))
-                this.closeHandler(key).then(() => {
-                    console.log("after close", JSON.parse(JSON.stringify(this.pageCtx.data[TOAST_LIST])))
-                })
+                this.closeHandler(key)
             }, duration)
         }
     }

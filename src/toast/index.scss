@@ -14,6 +14,7 @@
     overflow: hidden;
     transition: all .25s;
     &.closing {
+        height: 0;
         animation: toast-close .5s;
     }
     &.show-animation {
