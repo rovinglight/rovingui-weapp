@@ -1,4 +1,4 @@
-import rvToastClass from "../../components/toast/toast"
+import rvToastFactory from "../../components/toast/toast"
 let rvToast = {}
 
 Page({
@@ -6,7 +6,7 @@ Page({
         index: 0
     },
     onLoad: function () {
-        rvToast = new rvToastClass(this)
+        rvToast = rvToastFactory(this)
     },
     handleClick: function (e) {
         rvToast.show(`第${this.data.index}条推送通知`, {

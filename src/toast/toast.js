@@ -56,7 +56,6 @@ class rvToast {
     }
     clickHandler (key) {
         let toastList = this.pageCtx.data[TOAST_LIST]
-        let targetToast = toastList.find(toast => toast.key === key)
         let clickHandler = (this.cbList.find(toast => toast.key === key)).onClick
         if (!clickHandler) return
         clickHandler()
@@ -113,4 +112,8 @@ class rvToast {
     }
 }
 
-module.exports = rvToast
+function rvToastFactory (ctx) {
+    return (new rvToast(ctx))
+}
+
+module.exports = rvToastFactory
