@@ -74,6 +74,7 @@ class rvToast {
         })
     }
     show (message, config) {
+        config = config || {}
         let toastList = this.pageCtx.data[TOAST_LIST] || []
         let date = new Date()
         let key = date.valueOf()
