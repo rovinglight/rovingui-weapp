@@ -82,12 +82,24 @@ class rvToast {
         let onClick = config.onClick
         let duration = config.duration === null ? null : config.duration || 4500
         toastList.push({
+            showAnimation: true,
             key,
             message
         })
         this.pageCtx.setData({
             [TOAST_LIST]: toastList
         })
+        setTimeout(() => {
+            let toastList = this.pageCtx.data[TOAST_LIST]
+            toastList = toastList.map(toast => {
+                if (toast.key !== key) return toast
+                toast.showAnimation = false
+                return toast
+            })
+            this.pageCtx.setData({
+                [TOAST_LIST]: toastList
+            })
+        }, 600)
         this.cbList.push({
             key,
             onClose,

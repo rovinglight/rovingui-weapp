@@ -12,10 +12,12 @@
     background-color: white;
     margin-bottom: 10px;
     overflow: hidden;
-    animation: toast-show ease-out .5s;
     transition: all .25s;
     &.closing {
         animation: toast-close .5s;
+    }
+    &.show-animation {
+        animation: toast-show ease-out .5s;
     }
 }
 .toast-container:active {
@@ -74,10 +76,14 @@
     0% {
         opacity: 1;
         right: 0rpx;
+        height: 27px;
+        margin-bottom: 10px;
     }
     100% {
         opacity: 0;
         right: -100rpx;
+        height: 0;
+        margin-bottom: 0px;
     }
 }
 @keyframes closeall-expand {

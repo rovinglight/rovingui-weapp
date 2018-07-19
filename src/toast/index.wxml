@@ -3,7 +3,7 @@
         wx:for="{{toastList}}" 
         wx:key="{{item.key}}" 
         data-key="{{item.key}}"
-        class="toast-container {{item.closing ? 'closing' : ''}}" 
+        class="toast-container {{item.closing ? 'closing' : ''}} {{item.showAnimation ? 'show-animation' : ''}}" 
         bindlongpress="handleLongPress">
         <view 
             class="toast-close" 
