@@ -51,7 +51,7 @@ class rvToast {
                 let callBack = this.cbList.find(item => item.key === key)
                 callBack.onClose && callBack.onClose()
                 resolve(key)
-            }, 500)
+            }, 400)
         })
     }
     clickHandler (key) {
