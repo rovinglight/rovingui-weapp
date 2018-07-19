@@ -30,20 +30,36 @@ class rvToast {
         }
     }
     closeHandler (key) {
-        let toastList = this.pageCtx.data[TOAST_LIST]
-        toastList = toastList.filter(toast => toast.key !== key)
-        this.pageCtx.setData({
-            [TOAST_LIST]: toastList
+        return new Promise((resolve, reject) => {
+            let toastList = this.pageCtx.data[TOAST_LIST]
+            toastList = toastList.map(toast => {
+                if (toast.key !== key) {
+                    return toast
+                }
+                toast.closing = true
+                return toast
+            })
+            this.pageCtx.setData({
+                [TOAST_LIST]: toastList
+            })
+            setTimeout(() => {
+                toastList = this.pageCtx.data[TOAST_LIST]
+                toastList = toastList.filter(toast => toast.key !== key)
+                this.pageCtx.setData({
+                    [TOAST_LIST]: toastList
+                })
+                let callBack = this.cbList.find(item => item.key === key)
+                callBack.onClose && callBack.onClose()
+                resolve(key)
+            }, 500)
         })
-        let callBack = this.cbList.find(item => item.key === key)
-        callBack.onClose && callBack.onClose()
     }
     clickHandler (key) {
         
     }
     pressHandler (key) {
         let toastList = this.pageCtx.data[TOAST_LIST]
-        toastList = toastList.map((toast, index) => {
+        toastList = toastList.map((toast) => {
             if (toast.key !== key) {
                 return toast
             }
@@ -80,8 +96,15 @@ class rvToast {
         }
     }
     clear () {
-        this.pageCtx.setData({
-            [TOAST_LIST]: []
+        let toastList = this.pageCtx.data[TOAST_LIST]
+        let length = toastList.length
+        let gap = 1000 / length
+        toastList.forEach((toast, index) => {
+            let key = toast.key
+            let delay = (length - index - 1) * gap
+            setTimeout(() => {
+                this.closeHandler(key)
+            }, delay)
         })
     }
 }

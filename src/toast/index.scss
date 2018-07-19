@@ -14,6 +14,9 @@
     overflow: hidden;
     animation: toast-show ease-out .5s;
     transition: all .25s;
+    &.closing {
+        animation: toast-close .5s;
+    }
 }
 .toast-container:active {
     opacity: .5;
@@ -42,6 +45,7 @@
 .closeall-container {
     display: none;
     color: white;
+    letter-spacing: .2em;
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -64,6 +68,16 @@
     100% {
         opacity: 1;
         right: 0rpx;
+    }
+}
+@keyframes toast-close {
+    0% {
+        opacity: 1;
+        right: 0rpx;
+    }
+    100% {
+        opacity: 0;
+        right: -100rpx;
     }
 }
 @keyframes closeall-expand {

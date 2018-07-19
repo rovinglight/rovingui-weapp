@@ -3,16 +3,19 @@
         wx:for="{{toastList}}" 
         wx:key="{{item.key}}" 
         data-key="{{item.key}}"
-        class="toast-container" 
+        class="toast-container {{item.closing ? 'closing' : ''}}" 
         bindlongpress="handleLongPress">
-        <view class="toast-close" data-key="{{item.key}}" bindtap="handleClose">
+        <view 
+            class="toast-close" 
+            data-key="{{item.key}}" 
+            bindtap="handleClose">
             <text>X</text>
         </view>
         <view class="toast-content" data-key="{{item.key}}" bindtap="handleTapMsg">
             {{item.message}}
         </view>
         <view class="{{item.closeAllShow ? 'active' : ''}} closeall-container" bindtap="handleCloseAll">
-            Clear All
+            清空所有
         </view>
     </view>
 </view>
