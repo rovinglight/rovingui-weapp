@@ -55,7 +55,11 @@ class rvToast {
         })
     }
     clickHandler (key) {
-        
+        let toastList = this.pageCtx.data[TOAST_LIST]
+        let targetToast = toastList.find(toast => toast.key === key)
+        let clickHandler = (this.cbList.find(toast => toast.key === key)).onClick
+        if (!clickHandler) return
+        clickHandler()
     }
     pressHandler (key) {
         let toastList = this.pageCtx.data[TOAST_LIST]
@@ -91,7 +95,7 @@ class rvToast {
         })
         if (duration) {
             setTimeout(() => {
-                this.closeHandler(null, key)
+                this.closeHandler(key)
             }, duration)
         }
     }
