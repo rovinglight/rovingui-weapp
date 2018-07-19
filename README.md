@@ -34,6 +34,10 @@ bower install https://github.com/rovinglight/rovingui-wxapp.git
 - 按钮 [rv-button](./src/btn/README.md)
 - 栅格 [rv-grid](./src/grid/README.md)
 - 面包屑 [rv-breadcrumb](./src/breadcrumb/README.md)
+- 提醒框 [rv-toast](./src/toast/README.md)
 
 ## 贡献
 欢迎issue以及PR
+
+## 联系
+Email: rovingui@rovinglight.com

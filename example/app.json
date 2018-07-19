@@ -1,6 +1,8 @@
 {
     "pages": [
         "pages/main/index",
+        "pages/toast/index",
+        "pages/breadcrumb/index",
         "pages/button/index",
         "pages/grid/index"
     ],
