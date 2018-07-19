@@ -6,7 +6,7 @@
 
 现包含按钮(btn)以及栅格(grid)组件，更多组件在来的路上。
 
-<img src="./example/asset/img/QR.jpg" width="150" height="150" />
+<img src="./img/QR.jpg" width="150" height="150" />
 
 ## 开发  
 
