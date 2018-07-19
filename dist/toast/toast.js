@@ -48,10 +48,15 @@ class rvToast {
                 this.pageCtx.setData({
                     [TOAST_LIST]: toastList
                 })
-                let callBack = this.cbList.find(item => item.key === key)
+                let callBack = () => {}
+                this.cbList = this.cbList.filter(item => {
+                    if (item.key !== key) return true
+                    callBack = item
+                    return false
+                })
                 callBack.onClose && callBack.onClose()
                 resolve(key)
-            }, 400)
+            }, 450)
         })
     }
     clickHandler (key) {
@@ -82,12 +87,24 @@ class rvToast {
         let onClick = config.onClick
         let duration = config.duration === null ? null : config.duration || 4500
         toastList.push({
+            showAnimation: true,
             key,
             message
         })
         this.pageCtx.setData({
             [TOAST_LIST]: toastList
         })
+        setTimeout(() => {
+            let toastList = this.pageCtx.data[TOAST_LIST]
+            toastList = toastList.map(toast => {
+                if (toast.key !== key) return toast
+                toast.showAnimation = false
+                return toast
+            })
+            this.pageCtx.setData({
+                [TOAST_LIST]: toastList
+            })
+        }, 600)
         this.cbList.push({
             key,
             onClose,
@@ -102,7 +119,7 @@ class rvToast {
     clear () {
         let toastList = this.pageCtx.data[TOAST_LIST]
         let length = toastList.length
-        let gap = 1000 / length
+        let gap = 500 / length
         toastList.forEach((toast, index) => {
             let key = toast.key
             let delay = (length - index - 1) * gap

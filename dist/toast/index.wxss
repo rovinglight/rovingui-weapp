@@ -12,10 +12,12 @@
   background-color: white;
   margin-bottom: 10px;
   overflow: hidden;
-  animation: toast-show ease-out .5s;
   transition: all .25s; }
   .toast-container.closing {
+    height: 0;
     animation: toast-close .5s; }
+  .toast-container.show-animation {
+    animation: toast-show ease-out .5s; }
 
 .toast-container:active {
   opacity: .5; }
@@ -69,10 +71,14 @@
 @keyframes toast-close {
   0% {
     opacity: 1;
-    right: 0rpx; }
+    right: 0rpx;
+    height: 27px;
+    margin-bottom: 10px; }
   100% {
     opacity: 0;
-    right: -100rpx; } }
+    right: -100rpx;
+    height: 0;
+    margin-bottom: 0px; } }
 
 @keyframes closeall-expand {
   0% {
