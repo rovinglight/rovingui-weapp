@@ -38,11 +38,10 @@ Component({
                     key: e.timeStamp
                 }
                 this.generateRipple(coordinate)
-                this.triggerEvent('click')
+                this.triggerEvent('rvclick', e)
             }
         },
         handleTouchStart: function (e) {
-            console.log(e)
             this.setData({
                 isHolding: true
             })
@@ -58,7 +57,6 @@ Component({
             this.setData({
                 ripple: rippleList
             })
-            console.log(this.data.ripple)
             setTimeout(() => {
                 rippleList = this.data.ripple
                 rippleList = rippleList.filter(((ripple) => ripple.key !== coordinate.key))
