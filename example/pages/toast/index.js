@@ -9,11 +9,28 @@ Page({
         rvToast = rvToastFactory(this)
     },
     handleClick: function (e) {
-        rvToast.show(`第${this.data.index}条推送通知`, {
-            duration: null,
-            onClose: () => console.log('close'),
-            onClick: () => console.log('clicked')
-        })
+        let type = e.target.dataset.type
+        let display = e.target.dataset.display
+        const config = {
+            default: {},
+            lastOneSec: {
+                duration: 1000
+            },
+            permanent: {
+                duration: null
+            },
+            callbackOnClose: {
+                onClose: () => {
+                    rvToast.show("我是关闭后触发的回调")
+                }
+            },
+            callbackOnClick: {
+                onClick: () => {
+                    rvToast.show("我是点击时触发的回调")
+                }
+            }
+        }
+        rvToast.show(display, config[type])
         this.setData({
             index: this.data.index + 1
         })

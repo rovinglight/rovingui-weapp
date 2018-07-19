@@ -10,3 +10,6 @@
 .divider {
     padding: 5px;
 }
+.font-12 {
+    font-size: 12px;
+}

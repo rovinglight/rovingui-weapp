@@ -1,7 +1,36 @@
 <view class="section-container">
-    Toast
-    <rv-button bindrvclick="handleClick">show toast</rv-button>
+    默认提醒框
     <view class="divider" />
-    <rv-button bindrvclick="clearToast">clear toast</rv-button>
+    <rv-button bindrvclick="handleClick" data-type="default" data-display="默认Toast">默认Toast</rv-button>
+    <view class="divider" />
+    <rv-button 
+        bindrvclick="handleClick" 
+        data-type="default" 
+        data-display="长内容Toast：Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices metus sapien, ut fermentum dolor lobortis nec. Nam placerat sollicitudin ligula sit amet varius. ">
+        长内容Toast
+    </rv-button>
 </view>
+
+<view class="section-container">
+    提醒框延时
+    <view class="divider" />
+    <rv-button bindrvclick="handleClick" data-type="lastOneSec" data-display="1秒后自动关闭">1秒后自动关闭</rv-button>
+    <view class="divider" />
+    <rv-button bindrvclick="handleClick" data-type="permanent" data-display="常驻Toast">常驻Toast</rv-button>
+</view>
+
+<view class="section-container">
+    回调函数
+    <view class="divider" />
+    <rv-button bindrvclick="handleClick" data-type="callbackOnClose" data-display="关闭时触发">关闭时触发</rv-button>
+    <view class="divider" />
+    <rv-button bindrvclick="handleClick" data-type="callbackOnClick" data-display="点击时触发">点击时触发</rv-button>
+</view>
+
+<view class="section-container">
+    关闭所有(长按Toast)
+    <view class="divider" />
+    <rv-button bindrvclick="clearToast">清空Toast</rv-button>
+</view>
+
 <rv-toast toastList="{{_rv_toast_list}}" bindtoasthelper="toastHelper" />
