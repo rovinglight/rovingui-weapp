@@ -3,11 +3,33 @@ const TOAST_LIST = "_rv_toast_list"
 class rvToast {
     constructor (pageCtx) {
         this.pageCtx = pageCtx
-        pageCtx.handleToastClose = this.closeHandler.bind(this)
+        pageCtx.toastHelper = this.eventDistribution.bind(this)
         this.cbList = []
     }
-    closeHandler (e, toastKey) {
-        let key = toastKey || e.detail.currentTarget.dataset.key
+    eventDistribution (payload) {
+        let detail = payload.detail
+        let type = detail.type
+        let key = detail.event.currentTarget.dataset.key
+        switch (type) {
+            case "closeTap": {
+                this.closeHandler(key)
+                break
+            }
+            case "msgTap": {
+                this.clickHandler(key)
+                break
+            }
+            case "longPress": {
+                this.pressHandler(key)
+                break
+            }
+            case "closeAll": {
+                this.clear()
+                break
+            }
+        }
+    }
+    closeHandler (key) {
         let toastList = this.pageCtx.data[TOAST_LIST]
         toastList = toastList.filter(toast => toast.key !== key)
         this.pageCtx.setData({
@@ -16,6 +38,22 @@ class rvToast {
         let callBack = this.cbList.find(item => item.key === key)
         callBack.onClose && callBack.onClose()
     }
+    clickHandler (key) {
+        
+    }
+    pressHandler (key) {
+        let toastList = this.pageCtx.data[TOAST_LIST]
+        toastList = toastList.map((toast, index) => {
+            if (toast.key !== key) {
+                return toast
+            }
+            toast.closeAllShow = !Boolean(toast.closeAllShow)
+            return toast
+        })
+        this.pageCtx.setData({
+            [TOAST_LIST]: toastList
+        })
+    }
     show (message, config) {
         let toastList = this.pageCtx.data[TOAST_LIST] || []
         let date = new Date()
@@ -23,7 +61,6 @@ class rvToast {
         let onClose = config.onClose
         let onClick = config.onClick
         let duration = config.duration === null ? null : config.duration || 4500
-        console.log(duration)
         toastList.push({
             key,
             message

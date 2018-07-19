@@ -13,6 +13,10 @@
     margin-bottom: 10px;
     overflow: hidden;
     animation: toast-show ease-out .5s;
+    transition: all .25s;
+}
+.toast-container:active {
+    opacity: .5;
 }
 .toast-close {
     background-color: #555;
@@ -35,6 +39,23 @@
     padding: 5px;
     margin-left: 30rpx;
 }
+.closeall-container {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 450rpx;
+    bottom: 0;
+    background-color: #555;
+    &.active {
+        right: 0rpx;
+        display: block;
+        animation: closeall-expand .25s;
+    }
+}
 @keyframes toast-show {
     0% {
         opacity: 0;
@@ -42,6 +63,14 @@
     }
     100% {
         opacity: 1;
+        right: 0rpx;
+    }
+}
+@keyframes closeall-expand {
+    0% {
+        right: 450rpx;
+    }
+    100% {
         right: 0rpx;
     }
 }

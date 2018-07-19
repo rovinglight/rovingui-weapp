@@ -2,12 +2,17 @@
     <view 
         wx:for="{{toastList}}" 
         wx:key="{{item.key}}" 
-        class="toast-container" >
+        data-key="{{item.key}}"
+        class="toast-container" 
+        bindlongpress="handleLongPress">
         <view class="toast-close" data-key="{{item.key}}" bindtap="handleClose">
             <text>X</text>
         </view>
         <view class="toast-content" data-key="{{item.key}}" bindtap="handleTapMsg">
             {{item.message}}
+        </view>
+        <view class="{{item.closeAllShow ? 'active' : ''}} closeall-container" bindtap="handleCloseAll">
+            Clear All
         </view>
     </view>
 </view>

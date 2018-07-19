@@ -10,10 +10,28 @@ Component({
     },
     methods: {
         handleClose: function (e) {
-            this.triggerEvent('toastclose', e)
+            this.triggerEvent('toasthelper', {
+                event: e,
+                type: "closeTap"
+            })
         },
         handleTapMsg: function (e) {
-            this.triggerEvent('toastclick', e)
+            this.triggerEvent('toasthelper', {
+                event: e,
+                type: "msgTap"
+            })
+        },
+        handleLongPress: function (e) {
+            this.triggerEvent('toasthelper', {
+                event: e,
+                type: "longPress"
+            })
+        },
+        handleCloseAll: function (e) {
+            this.triggerEvent('toasthelper', {
+                event: e,
+                type: "closeAll"
+            })
         }
     }
 })

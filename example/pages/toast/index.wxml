@@ -4,4 +4,4 @@
     <view class="divider" />
     <rv-button bindrvclick="clearToast">clear toast</rv-button>
 </view>
-<rv-toast toastList="{{_rv_toast_list}}" bindtoastclose="handleToastClose" />
+<rv-toast toastList="{{_rv_toast_list}}" bindtoasthelper="toastHelper" />
