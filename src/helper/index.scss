@@ -1,4 +1,29 @@
-
+// gradient bg -------------
+.bg-flare {
+    color: white;
+    background: linear-gradient(to left, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+.bg-telegram {
+    background: linear-gradient(to left, #1c92d2, #f2fcfe);
+}
+.bg-facebook {
+    background: linear-gradient(to left, #00c6ff, #0072ff);
+}
+.bg-orange {
+    background: linear-gradient(to left, #fc4a1a, #f7b733);
+}
+.bg-html {
+    background: linear-gradient(to left, #e44d26, #f16529);
+}
+.bg-firewatch {
+    background: linear-gradient(to left, #cb2d3e, #ef473a);
+}
+.bg-instagram {
+    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+}
+.bg-deepspace {
+    background: linear-gradient(to left, #232526, #414345);
+}
 // font -------------------
 .font-12 {
     font-size: 12px;
