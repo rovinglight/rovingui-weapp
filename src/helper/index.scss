@@ -1,0 +1,34 @@
+
+// font -------------------
+.font-12 {
+    font-size: 12px;
+}
+.font-16 {
+    font-size: 16px;
+}
+// divider ---------------
+.rv-divider {
+    margin: 5px 0;
+    display: table;
+    width: 100%;
+    font-weight: 500;
+    color: rgba(0,0,0,.85);
+    font-size: 16px;
+    line-height: 16px;
+    &::before {
+        content: "";
+        width: 50%;
+        display: table-cell;
+    }
+    &::after {
+        content: "";
+        width: 50%;
+        display: table-cell;
+    }
+    &.rv-divider-line::before {
+        border-top: 1px solid #e8e8e8;
+    }
+    &.rv-divider-line::after {
+        border-top: 1px solid #e8e8e8;
+    }
+}

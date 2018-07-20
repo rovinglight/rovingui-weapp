@@ -1,0 +1,18 @@
+<view class="section-container">
+    字体
+    
+</view>
+
+<view class="section-container">
+    分隔 Divider
+    <view class="rv-divider" />
+    <view class="bg-telegram divider font-12 color-box">
+        下面就是rv-divider
+    </view>
+    <view class="rv-divider" />
+    <view class="bg-telegram divider font-12 color-box">
+        上面就是rv-divider
+    </view>
+    <view class="rv-divider rv-divider-line" />
+</view>
+

@@ -1,4 +1,5 @@
 @import "components/grid/index.wxss";
+@import "components/helper/index.wxss";
 
 .section-container {
     padding: 0 10px;
@@ -9,7 +10,4 @@
 }
 .divider {
     padding: 5px;
-}
-.font-12 {
-    font-size: 12px;
 }
