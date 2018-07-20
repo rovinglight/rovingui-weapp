@@ -44,6 +44,9 @@
     <view class="bg-instagram divider font-12 divider-box">
         rv-divider 👆
     </view>
+    <view class="rv-divider" />
+    假装是标题 👇
     <view class="rv-divider rv-divider-line" />
+    <text class="font-12">带分割线的rv-divider 👆</text>
 </view>
 
