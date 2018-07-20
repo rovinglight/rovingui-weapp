@@ -1,35 +1,35 @@
 <view class="section-container">
     渐变背景
-    <view class="bg-instagram divider rv-font-12 color-box">
-        bg-instagram 🤘🏻
+    <view class="rv-bg-instagram divider rv-font-12 color-box">
+        rv-bg-instagram 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-flare divider rv-font-12 color-box">
-        bg-flare 🤘🏻
+    <view class="rv-bg-flare divider rv-font-12 color-box">
+        rv-bg-flare 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-orange divider rv-font-12 color-box">
-        bg-orange 🤘🏻
+    <view class="rv-bg-orange divider rv-font-12 color-box">
+        rv-bg-orange 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-html divider rv-font-12 color-box">
-        bg-html 🤘🏻
+    <view class="rv-bg-html divider rv-font-12 color-box">
+        rv-bg-html 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-firewatch divider rv-font-12 color-box">
-        bg-firewatch 🤘🏻
+    <view class="rv-bg-firewatch divider rv-font-12 color-box">
+        rv-bg-firewatch 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-telegram divider rv-font-12 color-box">
-        bg-telegram 🤘🏻
+    <view class="rv-bg-telegram divider rv-font-12 color-box">
+        rv-bg-telegram 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-facebook divider rv-font-12 color-box">
-        bg-facebook 🤘🏻
+    <view class="rv-bg-facebook divider rv-font-12 color-box">
+        rv-bg-facebook 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-deepspace divider rv-font-12 color-box">
-        bg-deepspace 🤘🏻
+    <view class="rv-bg-deepspace divider rv-font-12 color-box">
+        rv-bg-deepspace 🤘🏻
     </view>
     <view class="divider" />
 </view>
@@ -37,11 +37,11 @@
 <view class="section-container">
     分隔 Divider
     <view class="rv-divider" />
-    <view class="bg-instagram divider rv-font-12 divider-box">
+    <view class="rv-bg-instagram divider rv-font-12 divider-box">
         rv-divider 👇
     </view>
     <view class="rv-divider" />
-    <view class="bg-instagram divider rv-font-12 divider-box">
+    <view class="rv-bg-instagram divider rv-font-12 divider-box">
         rv-divider 👆
     </view>
     <view class="rv-divider" />

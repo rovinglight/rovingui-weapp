@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/helper/index",
         "pages/main/index",
+        "pages/helper/index",
         "pages/toast/index",
         "pages/breadcrumb/index",
         "pages/button/index",

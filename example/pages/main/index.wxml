@@ -20,5 +20,5 @@
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../toast/index">rv-toast</rv-button>
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../helper/index">css helper</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper</rv-button>
 </view>
