@@ -1,34 +1,34 @@
 <view class="section-container">
     渐变背景
-    <view class="bg-instagram divider font-12 color-box">
+    <view class="bg-instagram divider rv-font-12 color-box">
         bg-instagram 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-flare divider font-12 color-box">
+    <view class="bg-flare divider rv-font-12 color-box">
         bg-flare 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-orange divider font-12 color-box">
+    <view class="bg-orange divider rv-font-12 color-box">
         bg-orange 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-html divider font-12 color-box">
+    <view class="bg-html divider rv-font-12 color-box">
         bg-html 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-firewatch divider font-12 color-box">
+    <view class="bg-firewatch divider rv-font-12 color-box">
         bg-firewatch 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-telegram divider font-12 color-box">
+    <view class="bg-telegram divider rv-font-12 color-box">
         bg-telegram 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-facebook divider font-12 color-box">
+    <view class="bg-facebook divider rv-font-12 color-box">
         bg-facebook 🤘🏻
     </view>
     <view class="divider" />
-    <view class="bg-deepspace divider font-12 color-box">
+    <view class="bg-deepspace divider rv-font-12 color-box">
         bg-deepspace 🤘🏻
     </view>
     <view class="divider" />
@@ -37,16 +37,30 @@
 <view class="section-container">
     分隔 Divider
     <view class="rv-divider" />
-    <view class="bg-instagram divider font-12 divider-box">
+    <view class="bg-instagram divider rv-font-12 divider-box">
         rv-divider 👇
     </view>
     <view class="rv-divider" />
-    <view class="bg-instagram divider font-12 divider-box">
+    <view class="bg-instagram divider rv-font-12 divider-box">
         rv-divider 👆
     </view>
     <view class="rv-divider" />
-    假装是标题 👇
+    <text class="rv-font-16">带分割线的rv-divider 👇</text>
     <view class="rv-divider rv-divider-line" />
-    <text class="font-12">带分割线的rv-divider 👆</text>
+    <text class="rv-font-12">带分割线的rv-divider 👆</text>
 </view>
 
+<view class="section-container">
+    字体大小
+    <view class="rv-divider" />
+    <view class="font-container">
+        <view class="rv-divider" />
+        <text class="rv-font-12">rv-font-12</text>
+        <view class="rv-divider rv-divider-line" />
+        <text class="rv-font-14">rv-font-14</text>
+        <view class="rv-divider rv-divider-line" />
+        <text class="rv-font-16">rv-font-16</text>
+        <view class="rv-divider rv-divider-line" />
+        <text class="rv-font-18">rv-font-18</text>
+    </view>
+</view>

@@ -15,3 +15,8 @@
     border-radius: 5px;
     border: 2px solid black;
 }
+.font-container {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
