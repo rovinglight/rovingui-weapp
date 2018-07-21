@@ -1,6 +1,7 @@
 {
   "navigationBarTitleText": "RovingUI组件演示",
   "usingComponents": {
+    "rv-toast": "../../components/toast/index",
     "rv-button": "../../components/btn/index"
   }
 }

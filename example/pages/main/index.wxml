@@ -7,7 +7,7 @@
     <view class="divider" />
     <view class="rv-row  rv-row-center">
         <view class="rv-col">
-            Roving-UI
+            RovingUI
         </view>
     </view>
 </view>
@@ -22,8 +22,53 @@
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper</rv-button>
 </view>
-<view class="corner-ribbon top-right shadow">
+
+<view class="corner-ribbon rv-bg-deepspace" bindtap="showGithubPage">
     <view class="ribbon-content">
         Star me on Github
     </view>
 </view>
+
+<view class="github-container rv-bg-deepspace {{showGithubPage ? 'github-expand' : 'github-closing'}}">
+    <view class="github-mask rv-row rv-row-space-around rv-row-middle">
+        <view class="rv-col"></view>
+    </view>
+    <view class="close-button" bindtap="closeGithubPage">
+        <image src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ3NS4yIDQ3NS4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NzUuMiA0NzUuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTQwNS42LDY5LjZDMzYwLjcsMjQuNywzMDEuMSwwLDIzNy42LDBzLTEyMy4xLDI0LjctMTY4LDY5LjZTMCwxNzQuMSwwLDIzNy42czI0LjcsMTIzLjEsNjkuNiwxNjhzMTA0LjUsNjkuNiwxNjgsNjkuNiAgICBzMTIzLjEtMjQuNywxNjgtNjkuNnM2OS42LTEwNC41LDY5LjYtMTY4UzQ1MC41LDExNC41LDQwNS42LDY5LjZ6IE0zODYuNSwzODYuNWMtMzkuOCwzOS44LTkyLjcsNjEuNy0xNDguOSw2MS43ICAgIHMtMTA5LjEtMjEuOS0xNDguOS02MS43Yy04Mi4xLTgyLjEtODIuMS0yMTUuNywwLTI5Ny44QzEyOC41LDQ4LjksMTgxLjQsMjcsMjM3LjYsMjdzMTA5LjEsMjEuOSwxNDguOSw2MS43ICAgIEM0NjguNiwxNzAuOCw0NjguNiwzMDQuNCwzODYuNSwzODYuNXoiIGZpbGw9IiNGRkZGRkYiLz4KCQk8cGF0aCBkPSJNMzQyLjMsMTMyLjljLTUuMy01LjMtMTMuOC01LjMtMTkuMSwwbC04NS42LDg1LjZMMTUyLDEzMi45Yy01LjMtNS4zLTEzLjgtNS4zLTE5LjEsMGMtNS4zLDUuMy01LjMsMTMuOCwwLDE5LjEgICAgbDg1LjYsODUuNmwtODUuNiw4NS42Yy01LjMsNS4zLTUuMywxMy44LDAsMTkuMWMyLjYsMi42LDYuMSw0LDkuNSw0czYuOS0xLjMsOS41LTRsODUuNi04NS42bDg1LjYsODUuNmMyLjYsMi42LDYuMSw0LDkuNSw0ICAgIGMzLjUsMCw2LjktMS4zLDkuNS00YzUuMy01LjMsNS4zLTEzLjgsMC0xOS4xbC04NS40LTg1LjZsODUuNi04NS42QzM0Ny42LDE0Ni43LDM0Ny42LDEzOC4yLDM0Mi4zLDEzMi45eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+    </view>
+    <view>
+        <view class="place-holder" />
+        <view class="rv-row rv-row-center">
+            <view class="rv-col">
+                <image class="logo" src="../../asset/logo/rovingui-LOGO.png" />
+            </view>
+        </view>
+        <view class="rv-divider" />
+        <view class="rv-row rv-row-middle rv-row-center">
+            <view class="rv-col-20 cover-card">
+                <view class="url-box rv-font-16" bindtap="copyUrl">
+                    <view class="github-title">
+                        Github
+                    </view>
+                    <view class="rv-divider rv-divider-line" />
+                    https://github.com/rovinglight/rovingui-weapp
+                </view>
+            </view>
+        </view>
+        <view class="rv-row rv-row-middle rv-row-center">
+            <view class="rv-col-18">
+                <button class="url-box share-btn rv-font-16" open-type="share">
+                    转发给好友
+                </button>
+            </view>
+        </view>
+        <view class="place-holder" />
+        <view class="rv-row rv-row-middle rv-row-center">
+            <view class="rv-col-10">
+                <image class="bottom-image" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUwOC4xIDUwOC4xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MDguMSA1MDguMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiNGNkI0NEI7IiBkPSJNMjE3LjQsNDA3LjQ1Yy0yLjQsNC42LTUuMiw5LjEtOC4yLDEzLjNjLTQuMiw1LjktOC44LDExLjMtMTMuOSwxNi40ICBjLTIzLjUsMjMuNS01Ni4xLDM3LjgtOTIuNSwzNy4yYy0wLjEtNy41LDAuNi0xNC45LDEuNy0yMmMtMTkuMiwxMS00MS41LDE3LjItNjUuNiwxNi44Yy0wLjMtMjQuMSw1LjktNDYuNCwxNi44LTY1LjYgIGMtNy4xLDEuMS0xNC41LDEuOC0yMiwxLjZjLTAuNi00NC4xLDIwLjYtODIuOSw1My42LTEwNi40YzQuMi0zLDguNy01LjgsMTMuMy04LjJjLTAuMSwwLjUtMC4yLDEuMS0wLjMsMS42ICBjMTEuNCwxLjUsMjIuNiw0LjUsMzMuNCw5YzcuMSwyLjksMTMuOSw2LjQsMjAuNSwxMC42YzguMyw1LjIsMTYuMSwxMS40LDIzLjMsMTguNnMxMy4zLDE1LDE4LjUsMjMuM2M0LjIsNi42LDcuOCwxMy40LDEwLjcsMjAuNSAgYzQuNSwxMC44LDcuNSwyMiw5LDMzLjRDMjE2LjQsNDA3LjY1LDIxNi45LDQwNy41NSwyMTcuNCw0MDcuNDV6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkQwNUM7IiBkPSJNMjA2LjgsMzc0LjM1Yy00LjcsMTcuNy0xMy45LDMzLjktMjcuMSw0Ny4xYy0xNC41LDE0LjUtMzIuNiwyNC4yLTUyLjMsMjguNGw2LjEtMzkuNmwtNDAsMjIuOCAgYy05LjMsNS40LTE5LjQsOS4yLTMwLDExLjVjMi4zLTEwLjUsNi4yLTIwLjYsMTEuNS0zMGwyMi44LTQwbC0zOS42LDYuMWM0LjItMTkuNywxMy45LTM3LjgsMjguNC01Mi4zICBjMTMuMi0xMy4yLDI5LjQtMjIuNCw0Ny4xLTI3LjFjNy4xLDIuOSwxMy45LDYuNCwyMC41LDEwLjZjOC4zLDUuMiwxNi4xLDExLjQsMjMuMywxOC42czEzLjMsMTUsMTguNSwyMy4zICBDMjAwLjMsMzYwLjQ1LDIwMy45LDM2Ny4yNSwyMDYuOCwzNzQuMzV6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiM0MTU5NkI7IiBkPSJNMjAwLjcsNTA4LjA1YzIuNi0yLjIsNS4zLTQuNiw3LjgtNy4yYzI1LjEtMjUuMSwzOC44LTU3LjIsNDEuMi05MC4xYzMtMzkuOC0xMC43LTgwLjctNDEuMi0xMTEuMiAgcy03MS4zLTQ0LjItMTExLjItNDEuMmMtMzIuOCwyLjQtNjUsMTYuMS05MC4xLDQxLjJjLTIuNSwyLjUtNC45LDUuMi03LjIsNy44YzQuOC0zOC4zLDIxLjgtNzUuNCw1MS4yLTEwNC44ICBjMjcuNS0yNy41LDYxLjYtNDQuMiw5Ny4xLTUwLjJjNTUuNC05LjMsMTE0LjMsNy40LDE1Ny4xLDUwLjJjNDIuNyw0Mi43LDU5LjUsMTAxLjcsNTAuMiwxNTcuMWMtNiwzNS42LTIyLjcsNjkuNy01MC4yLDk3LjEgIEMyNzYuMSw0ODYuMjUsMjM5LDUwMy4yNSwyMDAuNyw1MDguMDV6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMzMzRBNUU7IiBkPSJNMzU1LjcsMzU5Ljc1Yy0zMiwyMi4xLTY3LjYsMzkuNi0xMDUuOSw1MS4xYzMtMzkuOC0xMC43LTgwLjctNDEuMi0xMTEuMnMtNzEuMy00NC4yLTExMS4yLTQxLjIgIGMxMS41LTM4LjQsMjktNzQsNTEuMS0xMDUuOWM1NS40LTkuMywxMTQuMyw3LjQsMTU3LjEsNTAuMkMzNDguMiwyNDUuMzUsMzY1LDMwNC4zNSwzNTUuNywzNTkuNzV6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGMjcwNUI7IiBkPSJNMjE1LjksNDA3Ljc1Yy0yLjYtMTguOS05LjEtMzcuMy0xOS43LTUzLjljLTUuMi04LjMtMTEuNC0xNi4xLTE4LjYtMjMuMyAgYy03LjItNy4yLTE1LTEzLjQtMjMuMy0xOC42Yy0xNi42LTEwLjYtMzUtMTcuMS01My45LTE5LjdjMjkuOC0xNDMuMywxNDMuMS0yNTYuMSwyODYuOC0yODVjMjMuNS00LjcsNDcuOC03LjIsNzIuOC03LjJoNDguMXY0OC4xICBjMCwyNC45LTIuNSw0OS4zLTcuMiw3Mi44QzQ3MiwyNjQuNjUsMzU5LjIsMzc3Ljk1LDIxNS45LDQwNy43NXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zOTcuNiwxMTAuNTVjLTMxLjQtMzEuNC04Mi4zLTMxLjQtMTEzLjcsMGMtMTUuNywxNS43LTIzLjYsMzYuMy0yMy41LDU2LjkgIGMwLjEsMjAuNSw3LjksNDEuMSwyMy41LDU2LjdzMzYuMSwyMy41LDU2LjYsMjMuNmMyMC43LDAuMSw0MS4zLTcuOCw1Ny0yMy42QzQyOSwxOTIuODUsNDI5LDE0MS45NSwzOTcuNiwxMTAuNTV6Ii8+CjxjaXJjbGUgc3R5bGU9ImZpbGw6Izg5RDZGNzsiIGN4PSIzNDAuOCIgY3k9IjE2Ny4zNSIgcj0iNTMuNSIvPgo8cGF0aCBzdHlsZT0iZmlsbDojNDE1OTZCOyIgZD0iTTI0OC45LDI1OS4yNUwyNDguOSwyNTkuMjVMMjQ4LjksMjU5LjI1Yy01My41LDE4LjgtMTEyLjEsNzcuNC0xMzAuOCwxMzAuOGwwLDAgIEMxNzEuNSwzNzEuMjUsMjMwLjEsMzEyLjc1LDI0OC45LDI1OS4yNXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzMzNEE1RTsiIGQ9Ik01MDAuOSwxMjAuOTVMMzg3LjIsNy4yNWMyMy41LTQuNyw0Ny44LTcuMiw3Mi44LTcuMmg0OC4xdjQ4LjEgIEM1MDguMSw3My4wNSw1MDUuNiw5Ny40NSw1MDAuOSwxMjAuOTV6Ii8+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+            </view>
+        </view>
+    </view>
+</view>
+
+<rv-toast toastList="{{_rv_toast_list}}" bindtoasthelper="toastHelper" />

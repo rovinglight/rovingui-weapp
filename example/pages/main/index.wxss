@@ -9,7 +9,6 @@
 }
 .corner-ribbon {
     width: 200px;
-    background: #000;
     position: absolute;
     top: 25px;
     right: -50px;
@@ -17,6 +16,8 @@
     padding: 3px;
     color: #f0f0f0;
     transform: rotate(45deg);
+    z-index: 100;
+    overflow: hidden;
 }
 .ribbon-content {
     padding-left: 17px;
@@ -24,4 +25,122 @@
     line-height: 20px;
     border: 1px dashed #aaa;
     letter-spacing: .05em;
+}
+.github-container {
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    height: 0;
+    z-index: 101;
+    overflow: scroll;
+}
+.github-container .logo {
+    border-color: #f0f0f0;
+}
+.github-container .close-button {
+    display: inline-block;
+    padding: 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+.github-container .close-button image {
+    width: 30px;
+    height: 30px;
+}
+.url-box {
+    width: calc(100% - 20px);
+    word-break:break-all;
+    color: #555;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 6px 18px 0 rgba(0,0,0,.9);
+    overflow: hidden;
+    transition: all .5s;
+}
+.cover-card {
+    z-index: 2;
+}
+.share-btn {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.github-title {
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}
+.url-box:active {
+    background-color: #aaa;
+}
+.github-expand {
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+    animation: github-expand cubic-bezier(0,.8,0,.99) .7s;
+}
+.github-expand .github-mask {
+    color: white;
+    background-color: black;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 6px 18px 0 rgba(0,0,0,.9);
+    z-index: 102;
+    animation: github-mask ease 1s;
+}
+.github-closing {
+    animation: github-closing cubic-bezier(0,.8,0,.99) .7s;
+}
+.place-holder {
+    padding: 20px;
+}
+.bottom-image {
+    width: 150px;
+    height: 150px;
+}
+@keyframes github-expand {
+    0% {
+        left: 750rpx;
+    }
+    100% {
+        left: 0rpx;
+    }
+}
+@keyframes github-closing {
+    0% {
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0rpx;
+    }
+    100% {
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 750rpx;
+    }
+}
+@keyframes github-mask {
+    0% {
+        left: 0rpx;
+        width: 1750rpx;
+    }
+    100% {
+        left: -1750rpx;
+        width: 1750rpx;
+    }
 }
