@@ -22,3 +22,8 @@
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper</rv-button>
 </view>
+<view class="corner-ribbon top-right shadow">
+    <view class="ribbon-content">
+        Star me on Github
+    </view>
+</view>

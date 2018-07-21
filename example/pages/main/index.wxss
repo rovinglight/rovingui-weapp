@@ -7,3 +7,21 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
     margin-top: 10px;
 }
+.corner-ribbon {
+    width: 200px;
+    background: #000;
+    position: absolute;
+    top: 25px;
+    right: -50px;
+    text-align: center;
+    padding: 3px;
+    color: #f0f0f0;
+    transform: rotate(45deg);
+}
+.ribbon-content {
+    padding-left: 17px;
+    font-size: 12px;
+    line-height: 20px;
+    border: 1px dashed #aaa;
+    letter-spacing: .05em;
+}
