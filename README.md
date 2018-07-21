@@ -4,9 +4,11 @@
 ## 概述
 [RovingUI](https://github.com/rovinglight/rovingui-wxapp)组件库是由个人在微信小程序开发中所构建的独立组件整合而成的。在组件设计上会偏重动态效果以及阴影的使用。  
 
+[组件使用文档](https://rovinglight.github.io/rovingui-weapp/)
+
 现包含按钮(btn)以及栅格(grid)组件，更多组件在来的路上。
 
-<img src="./img/QR.jpg" width="150" height="150" />
+<img src="./docs/images/QR.jpg" width="150" height="150" />
 
 ## 开发  
 ```
