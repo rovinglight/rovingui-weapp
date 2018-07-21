@@ -9,13 +9,14 @@
 <img src="./images/QR.jpg" width="150" height="150" />
 
 ## 开发  
-```
+在项目根目录运行👇 命令，并用微信开发者工具打开example目录。
+```bash
 npm run dev
 ```
 
 ## 安装使用
-1. 使用bower来进行安装。
-```
+1. 使用bower来安装组件库，也可以直接下载项目，并将dist目录拷贝至小程序项目中进行引用。
+```bash
 bower install https://github.com/rovinglight/rovingui-wxapp.git
 ```
 2. 在要使用的页面的json文件中的usingComponents字段中添加要使用的组件。
