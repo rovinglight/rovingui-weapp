@@ -19,6 +19,7 @@ Page({
   },
   navigateTo: function (e) {
     let pageUrl = e.target.dataset.url
+    wx.vibrateShort()
     wx.navigateTo({
       url: pageUrl
     })
