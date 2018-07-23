@@ -4,6 +4,6 @@ Component({
         type: String
     },
     methods: {
-
+        
     }
 })
