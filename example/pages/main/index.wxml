@@ -14,11 +14,11 @@
 <view class="section-container">
     基础组件
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../button/index">rv-button</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../button/index">rv-button 按钮</rv-button>
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../grid/index">rv-grid</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../grid/index">rv-grid 栅格</rv-button>
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper 样式</rv-button>
 </view>
 <view class="section-container">
     表单
@@ -26,14 +26,19 @@
     
 </view>
 <view class="section-container">
+    展示
+    <view class="divider" />
+    
+</view>
+<view class="section-container">
     反馈
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../toast/index">rv-toast</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../toast/index">rv-toast 通知</rv-button>
 </view>
 <view class="section-container">
     导航
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../breadcrumb/index">rv-breadcrumb</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../breadcrumb/index">rv-breadcrumb 面包屑</rv-button>
 </view>
 
 <!-- Github ribbon -->

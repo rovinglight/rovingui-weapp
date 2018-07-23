@@ -40,7 +40,7 @@
 .github-container .close-button {
     display: inline-block;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 10px;
     color: white;
