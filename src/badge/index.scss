@@ -1,6 +1,7 @@
 .badge-container {
     position: relative;
     display: inline-block;
+    vertical-align: middle;
 }
 .badge {
     padding: 0 6px;
@@ -11,18 +12,18 @@
     color: white;
     background-color: #f5222d;
     transition: all .5s;
+    &.corner-badge {
+        position: absolute;
+        top: -8px;
+        right: 0px;
+        transform: translateX(50%);
+    }
     &.dot {
         padding: 0;
         top: -3px;
         height: 6px;
         width: 6px;
         border-radius: 100%;
-    }
-    &.corner-badge {
-        position: absolute;
-        top: -8px;
-        right: 0px;
-        transform: translateX(50%);
     }
 }
 .hide {
