@@ -1,0 +1,6 @@
+<view class="badge-container">
+    <slot></slot>
+    <view class="badge corner-badge {{type !== 'inline' && count ? '' : 'hide'}}">{{count}}</view>
+    <view class="badge corner-badge dot {{type === 'inline' || count ? 'hide' : ''}}"></view>
+    <view class="badge {{type === 'inline' ? '' : 'hide'}}">{{count}}</view>
+</view>

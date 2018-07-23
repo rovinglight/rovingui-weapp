@@ -10,9 +10,8 @@ button::after {
   letter-spacing: 1px;
   height: 40px;
   line-height: 40px;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 0px 25px;
-  border: 2px solid rgba(0, 0, 0, 0.87);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   position: relative;
   transition: all .5s;
@@ -23,7 +22,7 @@ button::after {
   font-size: 12px;
   height: 30px;
   line-height: 27px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-weight: 300;
   padding: 0 15px; }
   .mini .loading {
