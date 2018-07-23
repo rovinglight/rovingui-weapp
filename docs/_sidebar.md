@@ -4,6 +4,8 @@
     * [rv-grid 栅格系统](grid.md)
     * [helper 通用样式](helper.md)
 * 表单
+* 展示
+    * [rv-badge 徽标](badge.md)
 * 反馈
     * [rv-toast 通知提醒框](toast.md)
 * 导航

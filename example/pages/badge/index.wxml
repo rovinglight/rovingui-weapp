@@ -1,0 +1,19 @@
+<view class="section-container">
+    数字徽标
+    <view class="rv-divider" />
+    <rv-badge count="{{5}}">
+        <view class="grey-box" />
+    </rv-badge>
+</view>
+<view class="section-container">
+    小点徽标
+    <view class="rv-divider" />
+    <rv-badge>
+        <view class="grey-box" />
+    </rv-badge>
+</view>
+<view class="section-container">
+    独立使用
+    <view class="rv-divider" />
+    <rv-badge type="inline" count="{{5}}" />
+</view>

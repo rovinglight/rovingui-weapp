@@ -1,0 +1,5 @@
+.grey-box {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+}

@@ -28,7 +28,7 @@
 <view class="section-container">
     展示
     <view class="divider" />
-    
+    <rv-button bindrvclick="navigateTo" data-url="../badge/index">rv-badge 徽标</rv-button>
 </view>
 <view class="section-container">
     反馈

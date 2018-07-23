@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/main/index",
+        "pages/badge/index",
         "pages/helper/index",
         "pages/toast/index",
         "pages/breadcrumb/index",

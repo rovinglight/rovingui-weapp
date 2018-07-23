@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "rv-badge",
+  "usingComponents": {
+    "rv-badge": "../../components/badge/index"
+  }
+}
