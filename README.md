@@ -1,5 +1,7 @@
 # RovingUI组件库  
 
+[![Join the chat at https://gitter.im/rovingui-weapp/Lobby](https://badges.gitter.im/rovingui-weapp/Lobby.svg)](https://gitter.im/rovingui-weapp/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![logo](./example/asset/logo/rovingui-LOGO.png)
 ## 概述
 [RovingUI](https://github.com/rovinglight/rovingui-wxapp) 组件库是由个人在微信小程序开发中所构建的独立组件整合而成的。在组件设计上会偏重动态效果以及阴影的使用。  
