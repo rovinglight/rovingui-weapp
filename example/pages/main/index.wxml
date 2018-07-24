@@ -24,7 +24,7 @@
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../grid/index">rv-grid 栅格</rv-button>
     <view class="divider" />
-    <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper 样式</rv-button>
+    <rv-button bindrvclick="navigateTo" data-url="../helper/index">css helper 通用样式</rv-button>
     <view class="divider" />
 </view>
 <view class="section-container">
