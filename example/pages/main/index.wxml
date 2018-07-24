@@ -10,6 +10,12 @@
             RovingUI
         </view>
     </view>
+    <!-- Github ribbon -->
+    <view class="corner-ribbon rv-bg-deepspace" bindtap="showGithubPage">
+        <view class="ribbon-content">
+            Star me on Github
+        </view>
+    </view>
 </view>
 <view class="section-container">
     基础组件
@@ -19,33 +25,30 @@
     <rv-button bindrvclick="navigateTo" data-url="../grid/index">rv-grid 栅格</rv-button>
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../helper/index">CSS Helper 样式</rv-button>
+    <view class="divider" />
 </view>
 <view class="section-container">
     表单
     <view class="divider" />
-    
+    <view class="divider" />
 </view>
 <view class="section-container">
     展示
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../badge/index">rv-badge 徽标</rv-button>
+    <view class="divider" />
 </view>
 <view class="section-container">
     反馈
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../toast/index">rv-toast 通知</rv-button>
+    <view class="divider" />
 </view>
 <view class="section-container">
     导航
     <view class="divider" />
     <rv-button bindrvclick="navigateTo" data-url="../breadcrumb/index">rv-breadcrumb 面包屑</rv-button>
-</view>
-
-<!-- Github ribbon -->
-<view class="corner-ribbon rv-bg-deepspace" bindtap="showGithubPage">
-    <view class="ribbon-content">
-        Star me on Github
-    </view>
+    <view class="divider" />
 </view>
 
 <!-- Github pop-up -->
