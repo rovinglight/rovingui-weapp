@@ -40,5 +40,5 @@
 
 <view class="section-container">
     Loading
-    <rv-button type="warn" loading="{{loading}}" bindtap="handleTap">点击来进入加载状态</rv-button>
+    <rv-button type="warn" loading="{{loading}}" bindtap="handleTap">点击进入加载状态</rv-button>
 </view>
