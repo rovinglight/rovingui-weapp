@@ -27,11 +27,11 @@
     <rv-button bindrvclick="navigateTo" data-url="../helper/index">css helper 通用样式</rv-button>
     <view class="divider" />
 </view>
-<view class="section-container">
+<!-- <view class="section-container">
     表单
     <view class="divider" />
     <view class="divider" />
-</view>
+</view> -->
 <view class="section-container">
     展示
     <view class="divider" />
